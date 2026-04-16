@@ -8,6 +8,8 @@ import{About} from './pages/about'
 
 function App(){
   return(
+    
+
     <Routes>
       <Route index
       element={<Home/>}>
@@ -23,6 +25,7 @@ function App(){
       </Route>
 
     </Routes>
+    
   )
 }
 export default App
