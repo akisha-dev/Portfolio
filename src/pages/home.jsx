@@ -3,25 +3,24 @@ import{Projects} from './projects'
 import{Contact} from './contact'
 import{About} from './about'
 import folder from '../assets/folder.svg'
+import { Welcome } from '../components/welcome'
 
 export function Home(){
     return(
         <>
+        <div 
+        className='
+        relative
+        top-[140px]
+        left-[30px]
+        flex
+        flex-col
+         gap-6'
+        
+        
+        >
 
-    <div className='flex
-    align-bottom
-    justify-center
-    text-9xl
-    z-0
-    fixed
-    top-1/2 
-    left-[500px]
-   -translate-x-1/2
-   -translate-y-1/2
-    font-thin
-    opacity-15
-    '
-    >welcome</div>
+    
         <div
         className='z-1'>
         <Link to="/about">   
@@ -60,6 +59,10 @@ export function Home(){
         </Link>
         </div> 
 
+
+        </div>
+        <Welcome />
+        
         </>
     )
 }
