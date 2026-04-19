@@ -7,10 +7,11 @@ import { Welcome } from '../components/welcome'
 
 export function Home(){
     return(
-        <>
+        <div
+        className='relative'>
         <div 
         className='
-        relative
+        fixed
         top-[140px]
         left-[30px]
         flex
@@ -28,8 +29,7 @@ export function Home(){
         width='30px'
         height='36px'
         className='invert'
-        ></img></Link> 
-        <Link to="/about">
+        ></img> 
         <button>About</button>
         </Link>
        </div> 
@@ -40,8 +40,8 @@ export function Home(){
         width='30px'
         height='36px'
         className='invert'
-        ></img></Link> 
-        <Link to="/projects">
+        ></img>
+        
         <button>Projects</button>
         </Link>
         </div>
@@ -53,16 +53,16 @@ export function Home(){
         width='30px'
         height='36px'
         className='invert'
-        ></img></Link> 
-        <Link to="/contact">
+        ></img>
         <button>Contact</button>
         </Link>
         </div> 
 
 
         </div>
-        <Welcome />
+        <div>
+        <Welcome /></div>
         
-        </>
+        </div>
     )
 }
