@@ -4,6 +4,7 @@ import{Contact} from './contact'
 import{About} from './about'
 import folder from '../assets/folder.svg'
 import { Welcome } from '../components/welcome'
+import { Footer } from '../components/footer'
 
 export function Home(){
     return(
@@ -62,6 +63,11 @@ export function Home(){
         </div>
         <div>
         <Welcome /></div>
+
+        <div 
+        className='
+     fixed bottom-0 w-full'>
+        <Footer /></div>
         
         </div>
     )
