@@ -1,4 +1,5 @@
 import { Header } from "./header"
+import { useState } from "react";
 
 export function Welcome(){
     const[isVisible,setIsVisible] = useState(true)
@@ -14,10 +15,14 @@ export function Welcome(){
         
       
         <div className="
+        z-50
         flex
         flex-col
-        absolute
-       left-1/4
+        fixed
+        top-1/2
+        left-2/4
+        -translate-x-1/2
+        -translate-y-1/2
         border-2
         border-[#42242D]
         w-min-h
@@ -25,6 +30,9 @@ export function Welcome(){
         bg-[#f5ede0]
         space-y-2
         text-[18px]
+        max-h-screen 
+        overflow-y-auto
+        w-[960px]
         ">
         <Header  onClose={()=> setIsVisible(false)}/>
          
@@ -74,7 +82,7 @@ export function Welcome(){
          bg-[#8ab4c8]
          ">Contact Me</button>
          </div>
-       <p> &gt; Press x button to close this pop-up</p>
+       <p> &gt; Press x button or click outside to close this pop-up</p>
         </div></div>
         </>
     )
