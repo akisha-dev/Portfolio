@@ -3,22 +3,23 @@ import xicon from '../assets/x-button.svg'
 export function Header(){
     return(
  <div className="
- 
+ justify-between
  h-[35px]
  flex
- border-1
- border-[#42242D]
- bg-[#633643]
+ border-b-2
+ border-black
+ bg-[#8ab4c8]
  gap-46
- pl-2
+ pl-1
  pt-1
- border-
+ m-0
+ 
  
  ">
         C:\AKANKSHA\portfolio  
         <img src={xicon}
         className='
-        invert
+        
         w-[20px]
         h-[20px]'></img>
 

@@ -9,7 +9,8 @@ import { Footer } from '../components/footer'
 export function Home(){
     return(
         <div
-        className='relative'>
+        className='relative
+        z-0'>
         <div 
         className='
         fixed
@@ -24,7 +25,7 @@ export function Home(){
 
     
         <div
-        className='z-1'>
+        className='z-0'>
         <Link to="/about">   
         <img src={folder}
         width='30px'
@@ -35,7 +36,7 @@ export function Home(){
         </Link>
        </div> 
 
-        <div className='z-1'>
+        <div className='z-0'>
         <Link to="/projects">   
         <img src={folder}
         width='30px'
@@ -48,7 +49,7 @@ export function Home(){
         </div>
 
 
-        <div className='z-1'>
+        <div className='z-0'>
         <Link to="/contact">   
         <img src={folder}
         width='30px'
@@ -61,11 +62,11 @@ export function Home(){
 
 
         </div>
-        <div>
+        <div className='z-2'>
         <Welcome /></div>
 
         <div 
-        className='
+        className='z-0
      fixed bottom-0 w-full'>
         <Footer /></div>
         

@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 body {
- background-color: #170C10;
+ background-color: 
+#e8d5a3
+;  ;
  font-family: "Quantico", sans-serif;
-  color:#F6EEF1;
+  color:black;
   min-height: 100vh;
-  background-color: #1a1a1f;
+ 
   background-image:
     repeating-linear-gradient(0deg, transparent 0px, transparent 39px, rgba(255,255,255,0.03) 39px, rgba(255,255,255,0.03) 40px),
     repeating-linear-gradient(90deg, transparent 0px, transparent 39px, rgba(255,255,255,0.03) 39px, rgba(255,255,255,0.03) 40px);

@@ -19,9 +19,7 @@ useEffect(()=>{
         h-[65px]
         border-[#211216]
         bg-[#42242D]
-       
-        
-        ">
+      ">
             <div className='flex
             flex-1 
             gap-10
