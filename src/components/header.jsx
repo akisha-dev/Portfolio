@@ -1,6 +1,9 @@
 import xicon from '../assets/x-button.svg'
+import { Welcome } from './welcome'
 
-export function Header(){
+export function Header({onClose}){
+
+
     return(
  <div className="
  justify-between
@@ -17,11 +20,13 @@ export function Header(){
  
  ">
         C:\AKANKSHA\portfolio  
-        <img src={xicon}
+         
+         <button
+         onClick={onClose}><img src={xicon}
         className='
         
         w-[20px]
-        h-[20px]'></img>
+        h-[20px]'></img></button>
 
         </div>
     )

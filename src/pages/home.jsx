@@ -60,15 +60,17 @@ export function Home(){
         </Link>
         </div> 
 
+          <div 
+        className='
+     fixed bottom-0 w-full'>
+        <Footer /></div>
+
 
         </div>
         <div className='z-2'>
         <Welcome /></div>
 
-        <div 
-        className='z-0
-     fixed bottom-0 w-full'>
-        <Footer /></div>
+      
         
         </div>
     )

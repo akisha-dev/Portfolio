@@ -1,16 +1,23 @@
 import { Header } from "./header"
 
 export function Welcome(){
+    const[isVisible,setIsVisible] = useState(true)
+      
+    if(!isVisible) return null;
     return(
         <>
         
+        <div 
+        className="fixed inset-0 bg-black/40 z-40"
+        onClick={() => setIsVisible(false)}  
+      />
         
       
         <div className="
         flex
         flex-col
         absolute
-       left-1/3
+       left-1/4
         border-2
         border-[#42242D]
         w-min-h
@@ -19,13 +26,13 @@ export function Welcome(){
         space-y-2
         text-[18px]
         ">
-        <Header />
+        <Header  onClose={()=> setIsVisible(false)}/>
          
         <div
         className="p-8"
         >
          <h1
-         className="p-2
+         className="
          text-center"
         
          > WELCOME</h1>
