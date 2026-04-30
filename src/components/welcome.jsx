@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { Header } from "./header"
-import { useState } from "react";
+import { useState } from "react"
+import {Projects} from  '../pages/projects'
 
 export function Welcome(){
     const[isVisible,setIsVisible] = useState(true)
@@ -68,19 +70,27 @@ export function Welcome(){
          > OR.....You can directly view my Projects
             and contact me by clicking the following buttons
          </div>
-         <div className= "p-4 space-y-4 space-x-16" >
+         <div className='p-4
+         space-y-4 
+         space-x-16
+         flex
+         
+         justify-center'>
+         <Link to="/Projects">
          <button
          className="
          border-2
          p-4
          bg-[#f0c040]
-         ">View Projects</button>
+         ">View Projects</button></Link>
+         
+         <Link to="/Contact">
          <button
          className="
          border-2
          p-4
          bg-[#8ab4c8]
-         ">Contact Me</button>
+         ">Contact Me</button></Link>
          </div>
        <p> &gt; Press x button or click outside to close this pop-up</p>
         </div></div>

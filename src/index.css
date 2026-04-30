@@ -9,6 +9,16 @@ body {
   min-height: 100vh;
  
   background-image:
-    repeating-linear-gradient(0deg, transparent 0px, transparent 39px, rgba(255,255,255,0.03) 39px, rgba(255,255,255,0.03) 40px),
-    repeating-linear-gradient(90deg, transparent 0px, transparent 39px, rgba(255,255,255,0.03) 39px, rgba(255,255,255,0.03) 40px);
+    rerepeating-linear-gradient(
+      0deg,
+      transparent 0px, transparent 29px,
+      rgba(42, 31, 14, 0.07) 29px,
+      rgba(42, 31, 14, 0.07) 30px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px, transparent 29px,
+      rgba(42, 31, 14, 0.07) 29px,
+      rgba(42, 31, 14, 0.07) 30px
+    );
 }

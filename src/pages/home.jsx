@@ -2,9 +2,9 @@ import {Link} from 'react-router-dom'
 import{Projects} from './projects'
 import{Contact} from './contact'
 import{About} from './about'
-import folder from '../assets/folder.svg'
 import { Welcome } from '../components/welcome'
 import { Footer } from '../components/footer'
+import FolderIcon from '../components/folderIcon'
 
 export function Home(){
     return(
@@ -15,10 +15,10 @@ export function Home(){
         className='
         fixed
         top-[140px]
-        left-[30px]
+        left-[120px]
         flex
         flex-col
-         gap-6'
+         gap-12'
         
         
         >
@@ -27,23 +27,14 @@ export function Home(){
         <div
         className='z-0'>
         <Link to="/about">   
-        <img src={folder}
-        width='30px'
-        height='36px'
-        className='invert'
-        ></img> 
+        <FolderIcon color="#a8cfc0" /> 
         <button>About</button>
         </Link>
        </div> 
 
         <div className='z-0'>
         <Link to="/projects">   
-        <img src={folder}
-        width='30px'
-        height='36px'
-        className='invert'
-        ></img>
-        
+       <FolderIcon color="#f0c040" />  
         <button>Projects</button>
         </Link>
         </div>
@@ -51,11 +42,7 @@ export function Home(){
 
         <div className='z-0'>
         <Link to="/contact">   
-        <img src={folder}
-        width='30px'
-        height='36px'
-        className='invert'
-        ></img>
+       <FolderIcon color="#e8a882" />
         <button>Contact</button>
         </Link>
         </div> 

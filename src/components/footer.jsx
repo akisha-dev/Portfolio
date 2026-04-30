@@ -16,15 +16,19 @@ useEffect(()=>{
         flex flex-1 
         items-center 
         border-t-2
-        h-[65px]
-        border-[#211216]
-        bg-[#42242D]
+        h-[60px]
+        border-[#2a1f0e]
+        bg-[#8ab4c8]
       ">
             <div className='flex
             flex-1 
-            gap-10
+            
             items-center
-            pl-13
+            justify-center
+           fixed
+           space-x-14
+            left-1/2
+            
            '>
             
             <a href="https://github.com/akisha-dev"
