@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
  
   background-image:
-    rerepeating-linear-gradient(
+    repeating-linear-gradient(
       0deg,
       transparent 0px, transparent 29px,
       rgba(42, 31, 14, 0.07) 29px,

@@ -1,7 +1,10 @@
 import { ProjectCard } from "../components/projectCard"
+import {Footer} from '../components/footer'
+
 export function Projects(){
     return (
         <div>
+          <h1>My Projects</h1>
         <div>
         <ProjectCard
         name="GitCard"
@@ -34,6 +37,11 @@ export function Projects(){
              "CSS", "DOM"]}
 
         live="https://akisha-dev.github.io/typing-test/"></ProjectCard>
-        </div></div>
+        </div>
+         <div>
+          <Footer />
+         </div>
+        
+        </div>
         
 )}
