@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import xIcon from '../assets/x-button.svg'
 
 export function ProjectCard({name, description, skills, live}){
@@ -8,13 +9,11 @@ export function ProjectCard({name, description, skills, live}){
         border-2
         border-gray
         m-8
-        
-        
         pb-4
         space-y-2
         flex
         flex-col
-        w-[500px]">
+        w-[400px]">
         <div
         className="
         flex
@@ -30,7 +29,7 @@ export function ProjectCard({name, description, skills, live}){
         <div className='
         pl-2
         text-[12px]'>
-        C:\PROJECTS\{name} &gt;</div>
+        C:\Projects\{name} &gt;</div>
         <div className='pl-2
         space-y-2'>
         <h1
@@ -49,7 +48,11 @@ export function ProjectCard({name, description, skills, live}){
                 </span>
             ))}
         </div>
-        <div>{live}</div></div></div>
+       <u><a href={live}
+       target="_blank"
+       rel="noreferrer"> 
+       <div>{live}</div>
+       </a></u></div></div>
         </>
     )
 }
