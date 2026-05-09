@@ -1,4 +1,17 @@
+import { ProjectCard } from "../components/projectCard"
+import {Footer} from '../components/footer'
+import { Popup } from "../components/popup"
+
 export function Projects(){
     return (
-        <h1>This is a demo</h1>
+  <div>
+     <div className="z-10">
+    <Popup />
+    </div>
+     <div
+     className="z-0">
+    <Footer/>
+    </div>
+ </div>
+        
 )}

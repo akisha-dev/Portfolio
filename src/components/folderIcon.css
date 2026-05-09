@@ -1,0 +1,26 @@
+.folder {
+  width: 48px;
+  height: 38px;
+  position: relative;
+}
+
+.folder-tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 8px;
+  background: #f0c040;
+  border: 2.5px solid #2a1f0e;
+  border-bottom: none;
+}
+
+.folder-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: #f0c040;
+  border: 2.5px solid #2a1f0e;
+}
