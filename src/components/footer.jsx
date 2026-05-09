@@ -11,7 +11,7 @@ useEffect(()=>{
 },1000)},[])
 
     return(
-        <div className="  
+        <div className="  z-10
         fixed bottom-0 left-0 w-full 
         flex flex-1 
         items-center 

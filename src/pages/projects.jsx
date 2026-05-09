@@ -4,15 +4,14 @@ import { Popup } from "../components/popup"
 
 export function Projects(){
     return (
-        <div>
-          <h1>My Projects</h1>
-          <div>
-               <Popup />
-          </div>
-         <div>
-          <Footer />
-         </div>
-        
-        </div>
+  <div>
+     <div className="z-10">
+    <Popup />
+    </div>
+     <div
+     className="z-0">
+    <Footer/>
+    </div>
+ </div>
         
 )}
