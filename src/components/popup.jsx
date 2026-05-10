@@ -6,7 +6,7 @@ import {Projects} from "../pages/projects"
 
 
 
-export function Popup(){
+export function Popup({ title,children}){
     return(
    <>
    <div className="fixed 
@@ -30,7 +30,7 @@ export function Popup(){
     text-center
     border-t-3
      border-b-3
-    ">D:\AKANKSHA\projects</h1>
+    ">D:\AKANKSHA\{title}</h1>
     <div
     className="
     p-1
@@ -86,42 +86,14 @@ export function Popup(){
        className="
        border-3
        grid grid-cols-2 gap-3 p-3
-       ">
+       "
+       >
+{children}
 
-   <ProjectCard
-        name="GitCard"
-        description="GitHub profile to a shareable PNG card.
-         Live API, png export, error handling.
-         "
-        skills={["React.js", "GitHub API",
-                "html2canvas", "Tailwind", "Vercel"]}
-        live={"https://git-card-tau.vercel.app"}></ProjectCard>
-
-
-     <ProjectCard
-        name="Keyboard Heatmap"
-        description="Visual keyboard that heatmaps your keystrokes in real-time. 
-        Pure JavaScript, zero libraries."
-        skills={["Vanilla JS", "HTML",
-                "CSS", "Keyboard Events"]}
-        live={'https://akisha-dev.github.io/Keyboard-heatmap/'}>
-        </ProjectCard>
-        
-
-        
-     <ProjectCard 
-        name="TypingFlow"
-        description="Typing speed test with WPM tracking and
-         real-time feedback.
-         No libraries."
-        skills={["Vanilla JS", "HTML",
-                "CSS", "DOM"]}
-        live="https://akisha-dev.github.io/typing-test/">
-        </ProjectCard>
-        </div></div>
 </div>
 </div>
-
+</div>
+</div>
    </>     
     )
 }
