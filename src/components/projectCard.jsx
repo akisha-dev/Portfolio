@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import xIcon from '../assets/x-button.svg'
 
 export function ProjectCard({name, description, skills, live}){
     return(
@@ -21,10 +20,7 @@ export function ProjectCard({name, description, skills, live}){
         border-b-2
         bg-[#8ab4c8]
         text-white">{name}
-        <img src={xIcon}
-        className='
-        w-[25px]
-        h-[20px]'></img></div>
+        </div>
         <div className="
         pl-2
         text-[12px]">

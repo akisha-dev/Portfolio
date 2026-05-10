@@ -1,5 +1,5 @@
 import { ProjectCard } from "./projectCard"
-import{Link} from "react-router-dom"
+import{Link,useLocation} from "react-router-dom"
 import {About} from "../pages/about"
 import {Contact} from "../pages/contact"
 import {Projects} from "../pages/projects"
@@ -7,6 +7,9 @@ import {Projects} from "../pages/projects"
 
 
 export function Popup({ title,children}){
+        const location = useLocation()
+
+        const active = (path) => location.pathname === path ?"bg-[#8ab4c8] text-white":""
     return(
    <>
    <div className="fixed 
@@ -30,7 +33,7 @@ export function Popup({ title,children}){
     text-center
     border-t-3
      border-b-3
-    ">D:\AKANKSHA\{title}</h1>
+    ">C:\AKANKSHA\{title}</h1>
     <div
     className="
     p-1
@@ -50,34 +53,39 @@ export function Popup({ title,children}){
         <div
         className="flex
         flex-col
-        gap-6
         w-[160px]
         border-r-2
-        flex-shrink-0
-        
-        
-      ">
-           <div
-           className="pt-5
-           pl-5
-           border-b-1
-             bg-[#ede4d3]  
-           ">Folders</div>
+        flex-shrink-0 ">
+           
            <Link to="/about">
            <div
-             className="
+             className={`
            border-b-1
-           pl-5">About</div></Link>
+        pl-5
+        h-[45px]
+        flex
+        items-center
+           ${active("/about")} `}>About</div></Link>
           
           
-          <Link to='/projects'> <div    className="
+          <Link to='/Projects'> <div   
+            className={`
            border-b-1
-           pl-5">Projects</div></Link>
+           pl-5
+           h-[45px]
+           flex
+        items-center
+           ${active("/Projects")} `}>Projects</div></Link>
           
           
-          <Link to="/contact"> <div    className="
+          <Link to="/contact"> <div 
+            className={`
            border-b-1
-           pl-5">Contact</div></Link>
+           pl-5
+           h-[45px]
+           flex
+        items-center
+           ${active("/contact")} `}>Contact</div></Link>
         </div>
         <div className="flex-1
         overflow-y-auto"
