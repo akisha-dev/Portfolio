@@ -5,7 +5,8 @@ import { Popup } from "../components/popup"
 export function Projects(){
     return (
   <div>
-     <div className="z-10">
+     <div className="z-10
+     grid grid-cols-2 gap-3 p-3">
     <Popup title="Projects">
    <ProjectCard
         name="GitCard"

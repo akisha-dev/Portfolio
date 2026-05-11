@@ -90,12 +90,8 @@ export function Popup({ title,children}){
         <div className="flex-1
         overflow-y-auto"
 >
-        <div
-       className="
-       border-3
-       grid grid-cols-2 gap-3 p-3
-       "
-       >
+        <div 
+            >
 {children}
 
 </div>

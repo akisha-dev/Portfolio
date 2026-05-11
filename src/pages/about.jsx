@@ -1,4 +1,14 @@
+import {Popup} from "../components/popup"
+
+
 export function About(){
     return (
-        <h1>This sis a emo</h1>
+        <>
+        <div>
+            <Popup title="About">
+
+            </Popup>
+        </div>
+        </>
+        
 )}
