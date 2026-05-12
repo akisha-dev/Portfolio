@@ -57,14 +57,14 @@ export function Popup({ title,children}){
         border-r-2
         flex-shrink-0 ">
            
-           <Link to="/about">
+         <Link to="/about">
            <div
              className={`
            border-b-1
-        pl-5
-        h-[45px]
-        flex
-        items-center
+           pl-5
+           h-[45px]
+           flex
+           items-center
            ${active("/about")} `}>About</div></Link>
           
           
@@ -74,7 +74,7 @@ export function Popup({ title,children}){
            pl-5
            h-[45px]
            flex
-        items-center
+          items-center
            ${active("/Projects")} `}>Projects</div></Link>
           
           
@@ -84,16 +84,13 @@ export function Popup({ title,children}){
            pl-5
            h-[45px]
            flex
-        items-center
+          items-center
            ${active("/contact")} `}>Contact</div></Link>
         </div>
         <div className="flex-1
-        overflow-y-auto"
->
-        <div 
-            >
-{children}
-
+        overflow-y-auto">
+        <div>
+   {children}
 </div>
 </div>
 </div>

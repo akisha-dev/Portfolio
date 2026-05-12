@@ -141,6 +141,10 @@ export function Contact(){
             <div>Odisha,India</div>
          </div>
 
+<a
+href="https://mail.google.com/mail/?view=cm&to=priyaakanksha031@gmail.com&su=Internship%20Opportunity"
+target="_blank">
+
          <button
          className="border-3
          mt-10
@@ -153,19 +157,22 @@ export function Contact(){
          hover:text-[#2a1f0e]
          "
           style={{boxShadow: "3px 3px 0 #8ab4c8"}}
-          >HIRE ME  &#8594;</button>
+          >HIRE ME  &#8594;</button></a>
 
+
+        <a href="/resume.pdf" 
+        download="Akanksha_Priya_Resume.pdf">
          <button
            className="border-3
          w-[260px]
          h-[65px]
-text-[#2a1f0e]
-bg-[#f0c040]
-hover:bg-[#2a1f0e] 
-hover:text-[#f0c040]
- "
- style={{boxShadow: "3px 3px 0 #8ab4c8"}}
->RESUME &darr;</button></div>
+        text-[#2a1f0e]
+        bg-[#f0c040]
+        hover:bg-[#2a1f0e] 
+        hover:text-[#f0c040]
+        "
+      style={{boxShadow: "3px 3px 0 #8ab4c8"}}
+      >RESUME &darr;</button></a></div>
 
         </Popup>
     
