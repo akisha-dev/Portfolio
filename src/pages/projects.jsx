@@ -6,8 +6,9 @@ export function Projects(){
     return (
   <div>
      <div className="z-10
-     grid grid-cols-2 gap-3 p-3">
+    ">
     <Popup title="Projects">
+        <div className=" grid grid-cols-2 gap-3 p-3">
    <ProjectCard
         name="GitCard"
         description="GitHub profile to a shareable PNG card.
@@ -37,7 +38,7 @@ export function Projects(){
         skills={["Vanilla JS", "HTML",
                 "CSS", "DOM"]}
         live="https://akisha-dev.github.io/typing-test/">
-        </ProjectCard>
+        </ProjectCard></div>
 </Popup> 
     </div>
      <div
