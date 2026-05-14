@@ -41,7 +41,7 @@ export function Welcome(){
                 <p className="text-sm mt-1">Frontend dev who loves creating creative web experiences</p>
             </div>
 
-            <div className="border-t border-dashed border-[#2a1f0e] pt-4 text-sm text-center">
+            <div className="border-t border-dashed border-[#2a1f0e] pt-4 text-md text-center">
                 &gt; Click a folder on the left to explore my work
             </div>
 

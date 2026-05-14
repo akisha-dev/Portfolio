@@ -11,6 +11,7 @@ export function ProjectCard({name, description, skills, live}){
         space-y-1
         flex 
         flex-col
+        bg-[#f5ede0]  
         ">
         <div
         className="
@@ -18,8 +19,11 @@ export function ProjectCard({name, description, skills, live}){
         justify-between
         p-2
         border-b-2
-        bg-[#8ab4c8]
-        text-white">{name}
+        bg-[#2a1f0e]
+        text-[#f0c040]">{name}
+
+       <div className='bg-[#2a1f0e]
+       text-[#f0c040]'> [LIVE]</div>
         </div>
         <div className="
         pl-2

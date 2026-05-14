@@ -6,10 +6,12 @@ export function Footer(){
  const[currentTime,setCurrentTime] = useState(new Date().toLocaleTimeString('en-Us',{hour12: true}))
 ;
 
-useEffect(()=>{
-    setInterval(()=>{
-        setCurrentTime(new Date().toLocaleTimeString('en-Us',{hour12: true}))
-},1000)},[])
+useEffect(() => {
+    const id = setInterval(() => {
+        setCurrentTime(new Date().toLocaleTimeString('en-US', { hour12: true }))
+    }, 1000)
+    return () => clearInterval(id)   // ← this is the cleanup
+}, [])
 
     return(
         <div className="  z-10

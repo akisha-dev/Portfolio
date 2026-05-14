@@ -10,27 +10,22 @@
     export function BootScreen({onComplete}){
     const [visible, setVisible] = useState([])
 
-    useEffect(() => {
+  useEffect(() => {
     const timers = [];
     lines.forEach((line, i) => {
-    const t = setTimeout(() => {
-    setVisible(prev => {
-    if (prev.includes(line)) return prev;
-    return [...prev, line];
-    });
-    if (i === lines.length - 1) {
-    setTimeout(() => {
-    setVisible(prev => {
-    if (prev.length === lines.length) onComplete();
-    return prev;
-    });
-    }, 1000);
-    }
-    }, i * 500);
-    timers.push(t);
+        const t = setTimeout(() => {
+            setVisible(prev => {
+                if (prev.includes(line)) return prev;
+                return [...prev, line];
+            });
+            if (i === lines.length - 1) {
+                setTimeout(() => onComplete(), 1000);  // ← simplified, no state check
+            }
+        }, (i + 1) * 500);  // ← was i*500, now starts at 500ms not 0
+        timers.push(t);
     });
     return () => timers.forEach(clearTimeout);
-    }, []);
+}, []);
 
     return (
     <div className="fixed inset-0 z-[100] flex flex-col justify-center items-center"

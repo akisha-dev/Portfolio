@@ -20,12 +20,10 @@ export function Projects(){
 
      <ProjectCard
         name="THIS SITE"
-        description="Win98-style OS portfolio. 
-        You're inside it right now.
-."
-        skills={["REACT ROUTER", "Tailwind",
-                "CSS", "Keyboard Events"]}
-        live={'https://akisha-dev.github.io/Keyboard-heatmap/'}>
+        description="Win98-style OS portfolio built from scratch. Custom window chrome, 
+        React Router, responsive sidebar, terminal boot sequence.."
+        skills={["React Router", "Tailwind", "Vite", "CSS"]}
+       >
         </ProjectCard>
         
 

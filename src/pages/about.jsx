@@ -60,9 +60,13 @@ export function About(){
        border-[#2a8a4a]
        text-[#1a5c30]
        w-[220px]
-       pl-3
+       pl-2
        mb-0
-       ">Open to Internships</div>
+      flex items-center gap-2
+       ">
+        <span className="inline-block w-2 h-2
+             rounded-full bg-[#2a8a4a] animate-pulse flex-shrink-0"
+              />Open to Internships</div>
        
        </div>
 
@@ -73,8 +77,11 @@ export function About(){
             <p className=" text-[#2a1f0e] text-xl">&gt; HELLO_WORLD.EXE</p>
             <div className="
             w-full mt-4 mb-3
-           ">Hi, I am  Akanksha ,a second year B.Tech CSE student building frontend projects with React and JavaScript.
-             I am currently looking for internships - open to relocation.</div>
+           ">Hi, I am  Akanksha, I started coding in November 2025. 
+           In 6 months I have shipped GitCard (live GitHub API → PNG export), 
+           built a keyboard heatmap in pure JS, and made this site-a Win98 OS desktop in React from scratch. 
+           I am currently in 2nd year CSE (AI/ML) with 9.17 CGPA at Sri Sri University and 
+          I am looking for a frontend internship where I can build real things.</div>
 
            <p className=" text-[#2a1f0e] text-xl">&gt; SKILLS.SYS</p>   
            <div className="flex
@@ -82,7 +89,7 @@ export function About(){
             gap-2
             mt-4">
            {skills.map(s=>(
-             <span key={s} className={
+             <span key={s.name} className={
              `${s.bg} border-2
               border-[#2a1f0e]
                text-[#2a1f0e]

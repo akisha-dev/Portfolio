@@ -1,4 +1,4 @@
-import "./FolderIcon.css";
+import "./folderIcon.css";
 
 
 export default function FolderIcon({ color = "#f0c040" }) {

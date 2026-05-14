@@ -16,21 +16,20 @@ export function Home(){
         <div
         className='
         z-0
-      mx-auto mt-6 w-[280px]
-      md:fixed md:top-1/4 md:left-1/2
-      md:-translate-x-1/2 md:-translate-y-1/2
-      md:w-[300px]
+        mx-auto mt-6 w-[280px]
+        md:fixed md:top-1/4 md:left-1/2
+        md:-translate-x-1/2 md:-translate-y-1/2
+        md:w-[300px]
         flex
         flex-col
         border-1
-       
         p-7
         bg-[#f5ede0]
         text-[#5a4530]
         border-[#2a1f0e]
         gap-2
         '
-        style={{'box-shadow':"1.5px 1.5px 0px #2a1f0e"}}>
+        style={{'boxShadow':"2.5px 2.5px 0px #2a1f0e"}}>
           <p className='text-[18px]
           text-[#2a1f0e]'>  README.TXT  </p>
             <div className='border-1'>
