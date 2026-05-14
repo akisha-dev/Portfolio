@@ -6,9 +6,9 @@ export function Contact(){
        <>
        
         <Popup title='Contact'>
-         <div className="pl-38
-         pr-38
-         pb-38
+         <div className="px-4 
+         md:px-10 
+         pb-10
          pt-6
          space-y-6">
         <p
@@ -48,7 +48,7 @@ export function Contact(){
          <div
          className="flex
           items-center
-            w-[500px]
+            w-full
           border-b-2
           border-[#d8cdb8]
           rounded-xl
@@ -73,7 +73,7 @@ export function Contact(){
         < div className="
         flex
           items-center 
-          w-[500px]
+          w-full
           border-b-2
           border-[#d8cdb8]
           rounded-xl">
@@ -98,7 +98,7 @@ export function Contact(){
           className="
         flex
           items-center
-            w-[500px]
+            w-full
           border-b-2
           border-[#d8cdb8]
           rounded-xl">
@@ -122,7 +122,7 @@ export function Contact(){
             className="
         flex
           items-center
-            w-[500px]
+            w-full
           border-b-2
           border-[#d8cdb8]
           rounded-xl">
@@ -140,6 +140,8 @@ export function Contact(){
             LOCATION </div> 
             <div>Odisha,India</div>
          </div>
+  
+  <div className="flex flex-col md:flex-row gap-4 pt-4">
 
 <a
 href="https://mail.google.com/mail/?view=cm&to=priyaakanksha031@gmail.com&su=Internship%20Opportunity"
@@ -147,8 +149,8 @@ target="_blank">
 
          <button
          className="border-3
-         mt-10
-         w-[260px]
+         w-full
+         md:w-[260px]
          h-[65px]
          mr-15
          bg-[#2a1f0e]
@@ -164,7 +166,8 @@ target="_blank">
         download="Akanksha_Priya_Resume.pdf">
          <button
            className="border-3
-         w-[260px]
+        w-full
+        md:w-[260px]
          h-[65px]
         text-[#2a1f0e]
         bg-[#f0c040]
@@ -173,7 +176,7 @@ target="_blank">
         "
       style={{boxShadow: "3px 3px 0 #8ab4c8"}}
       >RESUME &darr;</button></a></div>
-
+        </div>
         </Popup>
     
        <div>
