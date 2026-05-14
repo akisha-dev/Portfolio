@@ -13,10 +13,10 @@ export function Popup({ title,children}){
     return(
    <>
    <div className="fixed 
-   top-[10px]
-   left-[60px] 
-   right-[60px]
-   bottom-[10px]
+  top-[10px]
+  left-2 right-2
+  md:left-[60px] md:right-[60px]
+  bottom-[70px]
    z-20
  bg-[#f5ede0]
   flex 
@@ -45,17 +45,25 @@ export function Popup({ title,children}){
     <div>View</div>
     <div> Help</div>
     </div>
+
+  <div className="flex md:hidden border-b-2">
+  <Link to="/about" className={`flex-1 text-center py-2 border-r-2 ${active("/about")}`}>About</Link>
+  <Link to="/projects" className={`flex-1 text-center py-2 border-r-2 ${active("/projects")}`}>Projects</Link>
+  <Link to="/contact" className={`flex-1 text-center py-2 ${active("/contact")}`}>Contact</Link>
+</div>
     <div className="flex
     flex-1
     overflow-hidden
     bg-[#f5ede0]
     ">
         <div
-        className="flex
-        flex-col
+        className="hidden 
+        md:flex
+       md:flex-col
         w-[160px]
-        border-r-2
-        flex-shrink-0 ">
+       border-r-2
+        flex-shrink-0"
+>
            
          <Link to="/about">
            <div
@@ -68,14 +76,14 @@ export function Popup({ title,children}){
            ${active("/about")} `}>About</div></Link>
           
           
-          <Link to='/Projects'> <div   
+          <Link to='/projects'> <div   
             className={`
            border-b-1
            pl-5
            h-[45px]
            flex
           items-center
-           ${active("/Projects")} `}>Projects</div></Link>
+           ${active("/projects")} `}>Projects</div></Link>
           
           
           <Link to="/contact"> <div 

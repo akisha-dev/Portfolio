@@ -28,10 +28,10 @@ function App(){
        <Route path="about"
       element={<About/>}>
       </Route>
-       <Route path="Projects"
+       <Route path="projects"
       element={<Projects/>}>
       </Route>
-       <Route path="Contact"
+       <Route path="contact"
       element={<Contact/>}>
       </Route>
 

@@ -1,5 +1,6 @@
 import {Popup} from "../components/popup"
 import  pfp  from  "../assets/Pixel.png"
+import { Footer } from "../components/footer"
 
 export function About(){
       const skills = [
@@ -97,6 +98,10 @@ export function About(){
           
         </div></div>
         </Popup>
+        </div>
+
+        <div>
+          <Footer />
         </div>
         </>
         
