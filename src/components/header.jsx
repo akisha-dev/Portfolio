@@ -23,10 +23,11 @@ export function Header({onClose}){
          
          <button
          onClick={onClose}><img src={xicon}
-        className='
         
-        w-[20px]
-        h-[20px]'></img></button>
+        className='w-[40px]
+        h-[40px]
+        
+       '></img></button>
 
         </div>
     )

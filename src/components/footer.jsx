@@ -20,16 +20,8 @@ useEffect(()=>{
         border-[#2a1f0e]
         bg-[#8ab4c8]
       ">
-            <div className='flex
-            flex-1 
-            
-            items-center
-            justify-center
-           fixed
-           space-x-14
-            left-1/2
-            
-           '>
+            <div className='absolute left-1/2 -translate-x-1/2 flex items-center gap-8'>
+
             
             <a href="https://github.com/akisha-dev"
             target="_blank"
