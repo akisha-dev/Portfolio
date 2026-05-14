@@ -8,7 +8,7 @@ export function Projects(){
      <div className="z-10
     ">
     <Popup title="Projects">
-        <div className=" grid grid-cols-2 gap-3 p-3">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-3 p-3">
    <ProjectCard
         name="GitCard"
         description="GitHub profile to a shareable PNG card.
@@ -18,6 +18,16 @@ export function Projects(){
                 "html2canvas", "Tailwind", "Vercel"]}
         live={"https://git-card-tau.vercel.app"}></ProjectCard>
 
+     <ProjectCard
+        name="THIS SITE"
+        description="Win98-style OS portfolio. 
+        You're inside it right now.
+."
+        skills={["REACT ROUTER", "Tailwind",
+                "CSS", "Keyboard Events"]}
+        live={'https://akisha-dev.github.io/Keyboard-heatmap/'}>
+        </ProjectCard>
+        
 
      <ProjectCard
         name="Keyboard Heatmap"

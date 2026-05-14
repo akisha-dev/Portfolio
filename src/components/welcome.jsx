@@ -14,24 +14,26 @@ export function Welcome(){
         />
         
         <div className="
-z-50
-flex
-flex-col
-fixed
-top-1/2
-left-1/2
--translate-x-1/2
--translate-y-1/2
-border-2
-border-[#2a1f0e]
-bg-[#f0c040]
-w-[90vw]
-max-w-[380px]
-"
+        z-50
+        flex
+        flex-col
+        fixed
+        top-1/2
+        left-1/2
+        -translate-x-1/2
+        -translate-y-1/2
+        md:left-1/2
+        md:-translate-x-1/2
+        border-2 
+        border-[#2a1f0e]
+        bg-[#f0c040]
+        w-[90vw] max-w-[380px]
+
+        "
         >
         <Header onClose={()=> setIsVisible(false)}/>
          
-        <div className="p-6 flex flex-col gap-4 text-[#2a1f0e]">
+        <div className="p-8 flex flex-col gap-6 text-[#2a1f0e]">
             
             <div className="text-center">
                 <p className="text-sm tracking-widest">WELCOME</p>

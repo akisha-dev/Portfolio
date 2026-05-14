@@ -14,11 +14,11 @@ export function Contact(){
         <p
         className="
         text-3xl">CONTACT.EXE</p>  
-        <div className="border-5"></div>
+        
       
          <div
          className="pt-1
-         border-3
+         border-2
          flex
          h-[55px]
          items-center
@@ -26,6 +26,10 @@ export function Contact(){
          pl-3
          mt-6
          bg-[#a8cfc0]">
+              <span className="inline-block w-2 h-2
+              mr-17 rounded-full bg-[#2a8a4a] animate-pulse flex-shrink-0"
+              />
+
             Available for Frontend internships-remote or also open to relocation 
          </div>
 

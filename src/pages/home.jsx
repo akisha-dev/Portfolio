@@ -17,7 +17,7 @@ export function Home(){
         className='
         z-0
       mx-auto mt-6 w-[280px]
-      md:fixed md:top-1/3 md:left-1/2
+      md:fixed md:top-1/4 md:left-1/2
       md:-translate-x-1/2 md:-translate-y-1/2
       md:w-[300px]
         flex
@@ -50,8 +50,8 @@ export function Home(){
       mt-6
       md:fixed
       md:flex-col
-      md:top-[60px]
-      md:left-1/5
+      md:top-[55px]
+      md:left-1/6
       md:gap-16 
       md:mt-0
     "
