@@ -17,17 +17,15 @@ export function Contact(){
         
       
          <div
-         className="pt-1
-         border-2
+         className="border-2 
          flex
-         h-[55px]
          items-center
-         justify-center
-         pl-3
-         mt-6
+         gap-3
+         px-3
+         py-3
          bg-[#a8cfc0]">
               <span className="inline-block w-2 h-2
-              mr-17 rounded-full bg-[#2a8a4a] animate-pulse flex-shrink-0"
+              mr-16 rounded-full bg-[#2a8a4a] animate-pulse flex-shrink-0"
               />
 
             Available for Frontend internships-remote or also open to relocation 
@@ -35,7 +33,8 @@ export function Contact(){
 
          <div
          className="pt-1
-         border-l-6
+         border-l-[6px]
+         border-[#8a7a60]
          rounded-l
          flex
          items-center
@@ -62,6 +61,7 @@ export function Contact(){
          >
             <div
             className="border-2
+            flex-shrink-0
             flex
             items-center
             justify-center
@@ -71,7 +71,7 @@ export function Contact(){
             bg-[#2a1f0e]
             text-[#f5ede0]
             ">EMAIL</div> 
-            <div> priyaakanksha031@gmail.com</div>
+            <div className=" min-w-0 truncate text-sm"> priyaakanksha031@gmail.com</div>
          </div>
         
         < div className="
@@ -89,14 +89,18 @@ export function Contact(){
             w-[100px]
             h-[37px]
             mr-9
+            flex-shrink-0
+          
              bg-[#2a1f0e]
             text-[#f5ede0]
             
             ">GITHUB </div>  
-           <div
-         ><a href="https://github.com/akisha-dev" target="_blank" rel="noreferrer">
+         <div className="min-w-0 truncate text-sm"
+         >
+          <span className="text-blue-700">
+          <u><a href="https://github.com/akisha-dev" target="_blank" rel="noreferrer">
                github.com/akisha-dev
-               </a></div>
+               </a></u></span></div>
          </div>
           < div
           className="
@@ -115,12 +119,14 @@ export function Contact(){
             w-[100px]
             h-[37px]
             mr-9
+            flex-shrink-0
              bg-[#2a1f0e]
             text-[#f5ede0]
             ">LINKEDIN</div>   
-            <div><a href="https://www.linkedin.com/in/akanksha-priya-006197356/" target="_blank" rel="noreferrer">
+            <div className="min-w-0 truncate text-sm">
+              <span className="text-blue-700"><u><a href="https://www.linkedin.com/in/akanksha-priya-006197356/" target="_blank" rel="noreferrer">
                linkedin.com/in/akanksha-priya
-               </a></div>
+               </a></u></span></div>
          </div>
           < div
             className="
@@ -138,11 +144,12 @@ export function Contact(){
             w-[100px]
             h-[37px]
             mr-9
+            flex-shrink-0
             bg-[#2a1f0e]
             text-[#f5ede0]
             ">
             LOCATION </div> 
-            <div>Odisha,India</div>
+            <div className="text-sm">Odisha,India</div>
          </div>
   
   <div className="flex flex-col md:flex-row gap-4 pt-4">

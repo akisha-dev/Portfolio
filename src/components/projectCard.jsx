@@ -50,7 +50,7 @@ export function ProjectCard({name, description, skills, live}){
                 </span>
             ))}
         </div>
-     <div className="flex items-center gap-2">
+     {live && <div className="flex items-center gap-2">
      <span className="inline-block w-2 h-2 rounded-full bg-[#6a9e6a] animate-pulse flex-shrink-0"/>
        <u>
        <a href={live}
@@ -59,7 +59,7 @@ export function ProjectCard({name, description, skills, live}){
        <div className="break-all">{live}</div>
        </a>
        </u>
-       </div>
+       </div>}
        </div></div>
         </>
     )
